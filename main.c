@@ -63,7 +63,15 @@ int main()
             system("pause");
             break;
         case 2:
+            errorCode = go_back_to_previous_directory(&currentDirectory);
+            show_error(errorCode);
 
+            if (errorCode == 0)
+            {
+                strcpy(path, "");
+                pathChanged = 1;
+            }
+            system("pause");
             break;
 
         case 3:

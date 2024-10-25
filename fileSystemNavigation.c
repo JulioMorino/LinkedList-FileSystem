@@ -6,6 +6,8 @@
 
 int show_current_path(Node *currentDirectory, char *path);
 int show_current_path_content(Node *directoryContent);
+
+int go_back_to_previous_directory(Node **directoryPointer);
 Node *go_to_another_directory(Node *directoryPointer, char *wishedPath);
 
 /*
@@ -104,4 +106,16 @@ Node *go_to_another_directory(Node *directoryPointer, char *wishedPath)
     }
 
     return directoryPointer;
+}
+
+int go_back_to_previous_directory(Node **directoryPointer)
+{
+
+    if ((*directoryPointer)->parent != NULL)
+    {
+        (*directoryPointer) = (*directoryPointer)->parent;
+        return 0;
+    }
+
+    return 6;
 }

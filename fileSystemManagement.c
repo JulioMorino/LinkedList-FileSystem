@@ -34,6 +34,9 @@ void show_error(int errorCode)
     case 5:
         printf("\nCaminho indicado esta incorreto ou nao existe. Verifique se a \\ foi utilizada, por exemplo:\n\\C:\\pasta1exemplo\\pasta2exemplo\n\n");
         break;
+    case 6:
+        printf("\nVoce ja esta no diretorio raiz do sistema de arquivos. Nada foi feito\n");
+        break;
     default:
         break;
     }
