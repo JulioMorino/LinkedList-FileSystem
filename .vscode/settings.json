@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "struct_node.h": "c",
+        "stdio.h": "c"
+    }
+}
